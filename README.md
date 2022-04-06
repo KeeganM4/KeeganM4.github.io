@@ -1,3 +1,1 @@
-# wordle_clone
-
-A simple vanilla js clone of Wordle
+My trusty first word will win every time
