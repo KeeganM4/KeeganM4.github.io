@@ -123,7 +123,7 @@ function checkGuess () {
 }
 
 function insertLetter (pressedKey) {
-    if (nextLetter === 5) {
+    if (nextLetter === 6) {
         return
     }
     pressedKey = pressedKey.toLowerCase()
