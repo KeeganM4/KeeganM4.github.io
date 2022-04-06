@@ -15,7 +15,7 @@ function initBoard() {
         let row = document.createElement("div")
         row.className = "letter-row"
         
-        for (let j = 0; j < 5; j++) {
+        for (let j = 0; j < 6; j++) {
             let box = document.createElement("div")
             box.className = "letter-box"
             row.appendChild(box)
@@ -61,7 +61,7 @@ function checkGuess () {
         guessString += val
     }
 
-    if (guessString.length != 5) {
+    if (guessString.length != 6) {
         toastr.error("Not enough letters!")
         return
     }
@@ -72,7 +72,7 @@ function checkGuess () {
     }
 
     
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         let letterColor = ''
         let box = row.children[i]
         let letter = currentGuess[i]
