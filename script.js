@@ -62,12 +62,12 @@ function checkGuess () {
     }
 
     if (guessString.length != 6) {
-        toastr.error("Not enough letters!")
+        toastr.error("This bad boy can fit so many more letters. Try adding more letters!")
         return
     }
 
     if (!WORDS.includes(guessString)) {
-        toastr.error("Word not in list!")
+        toastr.error("Nope! Think of Keegan's trusty word!")
         return
     }
 
@@ -107,7 +107,7 @@ function checkGuess () {
     }
 
     if (guessString === rightGuessString) {
-        toastr.success("You guessed right! Game over!")
+        toastr.success("You guessed right! Trusty ORGASM never fails!")
         guessesRemaining = 0
         return
     } else {
@@ -116,8 +116,8 @@ function checkGuess () {
         nextLetter = 0;
 
         if (guessesRemaining === 0) {
-            toastr.error("You've run out of guesses! Game over!")
-            toastr.info(`The right word was: "${rightGuessString}"`)
+            toastr.error("NOOOOOOO")
+            toastr.info(`Trusty "${rightGuessString}" never fails!`)
         }
     }
 }
